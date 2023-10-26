@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ContactDetailsRow extends StatelessWidget {
-  const ContactDetailsRow(
-      {Key? key, required this.singleInfo, required this.singleIcon})
-      : super(key: key);
+  const ContactDetailsRow({
+    Key? key,
+    required this.userInfo,
+    required this.singleIcon,
+  }) : super(key: key);
 
-  final String singleInfo;
+  final String userInfo;
   final IconData singleIcon;
 
   @override
@@ -19,7 +21,7 @@ class ContactDetailsRow extends StatelessWidget {
           size: 28,
         ),
       ),
-      title: Text(singleInfo),
+      title: Text(userInfo),
     );
   }
 }

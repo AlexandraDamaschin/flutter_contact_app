@@ -77,7 +77,6 @@ class _ContactsScreenState extends State<ContactsScreen> {
 
   Widget _buildInit() {
     Widget searchBar = Flexible(
-      flex: 1,
       child: Card(
         child: ListTile(
           leading: const Icon(Icons.search),
@@ -118,7 +117,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
                 elements: groupedContacts.values.toList()[index],
                 groupBy: (element) => groupedContacts.keys.toList()[index],
                 groupSeparatorBuilder: (String groupByValue) =>
-                    Text(groupByValue),
+                    Text('Contacts starting with $groupByValue'),
                 itemBuilder: (context, element) {
                   var newContact =
                       _buildContact(element.firstName, element.lastName);

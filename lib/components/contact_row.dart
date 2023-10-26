@@ -43,6 +43,7 @@ class ContactRow extends StatelessWidget {
         child: Icon(
           Icons.phone_outlined,
           size: 28,
+          color: Colors.white,
         ),
       ),
     );

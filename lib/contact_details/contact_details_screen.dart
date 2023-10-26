@@ -27,24 +27,20 @@ class ContactDetailsScreen extends StatelessWidget {
         child: Column(children: [
           Center(
               child: Avatar(name: '${contact.firstName} ${contact.lastName}')),
-          const SizedBox(
-            height: 16,
-          ),
+          const SizedBox(height: 16),
           Column(children: [
             Text(
               "${contact.firstName} ${contact.lastName}",
               style: Theme.of(context).textTheme.displayLarge,
             ),
           ]),
-          const SizedBox(
-            height: 28,
-          ),
+          const SizedBox(height: 28),
           ContactDetailsRow(
-            singleInfo: contact.email,
+            userInfo: contact.email,
             singleIcon: Icons.email_outlined,
           ),
           ContactDetailsRow(
-            singleInfo: "@${contact.username}",
+            userInfo: "@${contact.username}",
             singleIcon: Icons.account_circle_outlined,
           )
         ]),

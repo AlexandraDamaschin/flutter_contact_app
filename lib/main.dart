@@ -16,10 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey[900],
-        brightness: Brightness.dark,
-        primaryColor: Colors.green,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Colors.blueGrey,
+        brightness: Brightness.light,
+        primaryColor: Colors.lightBlue,
       ),
       home: const ContactsScreen(),
     );

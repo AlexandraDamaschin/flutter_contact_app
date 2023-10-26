@@ -22,5 +22,7 @@ final sampleData = <String>[
   'Ole-Johan Dahl',
   'Peter Naur',
   'Robert E. Kahn',
+  'Robert E. Kahn',
+  'Robert E. Kahn',
   'Ronald L. Rivest',
 ];
