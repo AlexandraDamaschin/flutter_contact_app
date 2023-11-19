@@ -134,6 +134,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
 
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           actions: [searchBar],
         ),
         body: _searchResult.isNotEmpty || searchController.text.isNotEmpty

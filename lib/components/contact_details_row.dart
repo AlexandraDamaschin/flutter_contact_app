@@ -21,7 +21,9 @@ class ContactDetailsRow extends StatelessWidget {
           size: 28,
         ),
       ),
-      title: Text(userInfo),
+      title: Text(
+        userInfo,
+      ),
     );
   }
 }

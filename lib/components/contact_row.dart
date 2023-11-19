@@ -32,18 +32,26 @@ class ContactRow extends StatelessWidget {
       contentPadding: const EdgeInsets.only(top: 6, left: 16, bottom: 6),
       title: Text(
         "${contact.firstName} ${contact.lastName}",
-        style: const TextStyle(color: Colors.white),
+        style: const TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w400,
+          color: Colors.black,
+        ),
       ),
       subtitle: Text(
         contact.email,
-        style: const TextStyle(color: Colors.white70),
+        style: const TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w200,
+          color: Colors.black,
+        ),
       ),
       trailing: const Padding(
         padding: EdgeInsets.only(right: 24),
         child: Icon(
           Icons.phone_outlined,
           size: 28,
-          color: Colors.white,
+          color: Colors.black,
         ),
       ),
     );

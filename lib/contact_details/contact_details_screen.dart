@@ -15,6 +15,15 @@ class ContactDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+        title: const Text(
+          'Contact details',
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -31,7 +40,10 @@ class ContactDetailsScreen extends StatelessWidget {
           Column(children: [
             Text(
               "${contact.firstName} ${contact.lastName}",
-              style: Theme.of(context).textTheme.displayLarge,
+              style: const TextStyle(
+                fontSize: 24,
+                color: Colors.black,
+              ),
             ),
           ]),
           const SizedBox(height: 28),
