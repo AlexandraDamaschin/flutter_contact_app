@@ -17,6 +17,8 @@ avatars - for adding a nice avatar for each user
 
 grouped_list - for displaying grouped sections of contacts
 
+golden_toolkit - for testing purposes
+
 ## Notes
 Scroll to index API isn't as straightforward with ListView/Slivers because each widget may contain different items.
 
